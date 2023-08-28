@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>hi world</p>
+</body>
+<script>
+
+
+    const options = {
+        method: 'GET',
+        headers: {
+            accept: 'application/json',
+            Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2M2U4ZTdhZmMwOTRhYjJiYTk0OTc0ZjllYzM5YzEyOCIsInN1YiI6IjY0ZDliYWM1ZDEwMGI2MDBmZjBiZjY1MyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.bJKmFGBYVvK2VJUDdHrfRzcR-pyMXUS6qxHxdGpB294'
+        }
+    };
+
+    // fetch('https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=&sort_by=popularity.desc', options)
+    //     .then(moviesID => moviesID.json())
+    //     .then(async moviesID => {
+    //         // console.log(moviesID);
+    //         finalres = moviesID.results.map(async e => {
+    //             const res = await fetch(`https://api.themoviedb.org/3/movie/${e.id}/videos?language=en-US`, {
+    //                 method: 'GET',
+    //                 headers: {
+    //                     accept: 'application/json',
+    //                     Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2M2U4ZTdhZmMwOTRhYjJiYTk0OTc0ZjllYzM5YzEyOCIsInN1YiI6IjY0ZDliYWM1ZDEwMGI2MDBmZjBiZjY1MyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.bJKmFGBYVvK2VJUDdHrfRzcR-pyMXUS6qxHxdGpB294'
+    //                 }
+    //             })
+    //             return res.json();
+
+    //         });
+
+    //         let res1 = await Promise.allSettled(finalres);
+    //         res1 = res1.map(e => ([
+    //             ...e.value.results.filter(e => e.site == "YouTube" && e.name.includes("Trailer")),
+    //         ]))
+    //         const res2 = moviesID.results.map((e, index) => ({
+    //             ...e,
+    //             backdrop_path: "https://image.tmdb.org/t/p/original/" + e.backdrop_path,
+    //             poster_path: "https://image.tmdb.org/t/p/original/" + e.poster_path,
+    //             video: res1[index],
+
+    //         }))
+    //         console.log(res2, 123456789);
+
+    const data = [
+    {
+        "_id": "64e454bd67b7d4f8715f2297",
+        "MovData": [
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//2N4LXvTkUwPRkbvyzdmzvtnCHgR.jpg",
+                "first_air_date": "2023-07-25",
+                "genre_ids": [],
+                "id": 225660,
+                "name": "Pira-Pirasong Paraiso",
+                "origin_country": [
+                    "PH"
+                ],
+                "original_language": "tl",
+                "original_name": "Pira-Pirasong Paraiso",
+                "overview": "A con artist takes on the job of pretending to be one of the long-lost sisters of a young and rich woman. As she navigates a world of cunning and lies, she learns about right and wrong, love and family, and spectacular truths about herself.",
+                "popularity": 2115.097,
+                "poster_path": "https://image.tmdb.org/t/p/original//gELcO56G9EsUj6LSjaDq8VvI8De.jpg",
+                "vote_average": 9.3,
+                "vote_count": 6,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//qdkP0KAjW0xhQW2xYLL7bUF7unG.jpg",
+                "first_air_date": "1971-09-15",
+                "genre_ids": [
+                    80,
+                    18,
+                    9648
+                ],
+                "id": 873,
+                "name": "Columbo",
+                "origin_country": [
+                    "US"
+                ],
+                "original_language": "en",
+                "original_name": "Columbo",
+                "overview": "Columbo is a friendly, verbose, disheveled-looking police detective who is consistently underestimated by his suspects. Despite his unprepossessing appearance and apparent absentmindedness, he shrewdly solves all of his cases and secures all evidence needed for indictment. His formidable eye for detail and meticulously dedicated approach often become clear to the killer only late in the storyline.",
+                "popularity": 1572.015,
+                "poster_path": "https://image.tmdb.org/t/p/original//ypIU92ah9ytKWhDyJJCFoZitbOJ.jpg",
+                "vote_average": 8.1,
+                "vote_count": 554,
+                "video": [
+                    {
+                        "iso_639_1": "en",
+                        "iso_3166_1": "US",
+                        "name": "Columbo Trailer - Seasons 1-7 on DVD",
+                        "key": "vppJPgU2Blw",
+                        "site": "YouTube",
+                        "size": 360,
+                        "type": "Trailer",
+                        "official": false,
+                        "published_at": "2011-07-20T20:42:08.000Z",
+                        "id": "5e37db0a0c2710001a730233"
+                    }
+                ]
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//r54UMcnen0Egd1z1B2VKSrN6or8.jpg",
+                "first_air_date": "2009-03-09",
+                "genre_ids": [
+                    18,
+                    80
+                ],
+                "id": 1419,
+                "name": "Castle",
+                "origin_country": [
+                    "US"
+                ],
+                "original_language": "en",
+                "original_name": "Castle",
+                "overview": "After a serial killer imitates the plots of his novels, successful mystery novelist Richard \"Rick\" Castle receives permission from the Mayor of New York City to tag along with an NYPD homicide investigation team for research purposes.",
+                "popularity": 1595.25,
+                "poster_path": "https://image.tmdb.org/t/p/original//diXBeMzvfJb2iJg3G0kCUaMCzEc.jpg",
+                "vote_average": 8,
+                "vote_count": 1605,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//xXRsKNJHTOGrs5wfYAxkbM2RiyT.jpg",
+                "first_air_date": "2017-09-25",
+                "genre_ids": [
+                    18
+                ],
+                "id": 71712,
+                "name": "The Good Doctor",
+                "origin_country": [
+                    "US"
+                ],
+                "original_language": "en",
+                "original_name": "The Good Doctor",
+                "overview": "Shaun Murphy, a young surgeon with autism and savant syndrome, relocates from a quiet country life to join a prestigious hospital's surgical unit. Unable to personally connect with those around him, Shaun uses his extraordinary medical gifts to save lives and challenge the skepticism of his colleagues.",
+                "popularity": 1570.176,
+                "poster_path": "https://image.tmdb.org/t/p/original//luhKkdD80qe62fwop6sdrXK9jUT.jpg",
+                "vote_average": 8.5,
+                "vote_count": 11673,
+                "video": [
+                    {
+                        "iso_639_1": "en",
+                        "iso_3166_1": "US",
+                        "name": "Official Trailer",
+                        "key": "lnY9FWUTY84",
+                        "site": "YouTube",
+                        "size": 1080,
+                        "type": "Trailer",
+                        "official": true,
+                        "published_at": "2017-06-01T23:47:52.000Z",
+                        "id": "645b682d6aa8e0017381a23b"
+                    }
+                ]
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//aWPhMZ0P2DyfWB7k5NXhGHSZHGC.jpg",
+                "first_air_date": "2023-05-08",
+                "genre_ids": [
+                    18,
+                    80,
+                    10766
+                ],
+                "id": 209265,
+                "name": "Land of Desire",
+                "origin_country": [
+                    "BR"
+                ],
+                "original_language": "pt",
+                "original_name": "Terra e Paixão",
+                "overview": "The saga of a woman, guided by the power of love and moved by the desire for justice, who crosses paths with a family divided by ambition and many secrets.",
+                "popularity": 1871.95,
+                "poster_path": "https://image.tmdb.org/t/p/original//5kCMJ0vVzN9PsoamKctNnUz68Q2.jpg",
+                "vote_average": 6.5,
+                "vote_count": 106,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//ds1n5P0Y92cTh6UpbcA89hxM96a.jpg",
+                "first_air_date": "2005-03-27",
+                "genre_ids": [
+                    18
+                ],
+                "id": 1416,
+                "name": "Grey's Anatomy",
+                "origin_country": [
+                    "US"
+                ],
+                "original_language": "en",
+                "original_name": "Grey's Anatomy",
+                "overview": "Follows the personal and professional lives of a group of doctors at Seattle’s Grey Sloan Memorial Hospital.",
+                "popularity": 942.015,
+                "poster_path": "https://image.tmdb.org/t/p/original//daSFbrt8QCXV2hSwB0hqYjbj681.jpg",
+                "vote_average": 8.3,
+                "vote_count": 9420,
+                "video": [
+                    {
+                        "iso_639_1": "en",
+                        "iso_3166_1": "US",
+                        "name": "Grey's Anatomy 2005 | Trailer | Amazon Prime Video",
+                        "key": "qbkEtYz9acA",
+                        "site": "YouTube",
+                        "size": 1080,
+                        "type": "Clip",
+                        "official": false,
+                        "published_at": "2020-10-29T20:26:46.000Z",
+                        "id": "5f9b26626332f7003783d4b0"
+                    }
+                ]
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//nVRyd8hlg0ZLxBn9RaI7mUMQLnz.jpg",
+                "first_air_date": "2005-09-13",
+                "genre_ids": [
+                    18,
+                    9648,
+                    10765
+                ],
+                "id": 1622,
+                "name": "Supernatural",
+                "origin_country": [
+                    "US"
+                ],
+                "original_language": "en",
+                "original_name": "Supernatural",
+                "overview": "When they were boys, Sam and Dean Winchester lost their mother to a mysterious and demonic supernatural force. Subsequently, their father raised them to be soldiers. He taught them about the paranormal evil that lives in the dark corners and on the back roads of America ... and he taught them how to kill it. Now, the Winchester brothers crisscross the country in their '67 Chevy Impala, battling every kind of supernatural threat they encounter along the way. ",
+                "popularity": 1069.633,
+                "poster_path": "https://image.tmdb.org/t/p/original//KoYWXbnYuS3b0GyQPkbuexlVK9.jpg",
+                "vote_average": 8.3,
+                "vote_count": 6833,
+                "video": [
+                    {
+                        "iso_639_1": "en",
+                        "iso_3166_1": "US",
+                        "name": "Supernatural | Extended Trailer (2014)",
+                        "key": "yy96yJjkvjo",
+                        "published_at": "2014-09-16T00:30:01.000Z",
+                        "site": "YouTube",
+                        "size": 1080,
+                        "type": "Trailer",
+                        "official": false,
+                        "id": "59c1fe5092514176ad007944"
+                    }
+                ]
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//3FLHePl9Y3n4BidLVjIA9qSRDOE.jpg",
+                "first_air_date": "2021-08-03",
+                "genre_ids": [
+                    10766
+                ],
+                "id": 130542,
+                "name": "Bhagya Lakshmi",
+                "origin_country": [
+                    "IN"
+                ],
+                "original_language": "hi",
+                "original_name": "Bhagya Lakshmi",
+                "overview": "Hailing from a middle-class family, Lakshmi’s life is upended when she realises that her marriage to Rishi Oberoi, an industrialist’s son, is a sham to keep his death at bay.",
+                "popularity": 1673.611,
+                "poster_path": "https://image.tmdb.org/t/p/original//eVaGfVPA85AUrCAQoOLb0kY2SZA.jpg",
+                "vote_average": 5.8,
+                "vote_count": 103,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//1Vj73YrMj4OLBppgZdWXoGZlsGI.jpg",
+                "first_air_date": "2022-12-05",
+                "genre_ids": [
+                    18,
+                    10751,
+                    10766
+                ],
+                "id": 215902,
+                "name": "Katha Ankahee",
+                "origin_country": [
+                    "IN"
+                ],
+                "original_language": "hi",
+                "original_name": "कथा अनकही",
+                "overview": "Katha, a single parent, is in need of funds for her son's medical treatment. She comes across Viaan, who offers help but his conditions put her in an awkward situation.",
+                "popularity": 1973.353,
+                "poster_path": "https://image.tmdb.org/t/p/original//uhXU0SMPMlemKGHmwbldM60qqmW.jpg",
+                "vote_average": 7.6,
+                "vote_count": 93,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//i8NGdMIyZnGNpSHLDtpPwYXidPe.jpg",
+                "first_air_date": "2020-11-16",
+                "genre_ids": [
+                    18,
+                    10766,
+                    10751
+                ],
+                "id": 113218,
+                "name": "Imlie",
+                "origin_country": [
+                    "IN"
+                ],
+                "original_language": "hi",
+                "original_name": "इमली",
+                "overview": "All Imlie wanted was to create a name for herself in the city. But upon her arrival, she finds herself caught in the middle of Aditya and Malini's love story.",
+                "popularity": 1540.729,
+                "poster_path": "https://image.tmdb.org/t/p/original//sltUDXvpDZK3aVIdtkbImhcJv8t.jpg",
+                "vote_average": 7.4,
+                "vote_count": 78,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//jbTqU6BJMufoMnPSlO4ThrcXs3Y.jpg",
+                "first_air_date": "1999-01-31",
+                "genre_ids": [
+                    16,
+                    35
+                ],
+                "id": 1434,
+                "name": "Family Guy",
+                "origin_country": [
+                    "US"
+                ],
+                "original_language": "en",
+                "original_name": "Family Guy",
+                "overview": "Sick, twisted, politically incorrect and Freakin' Sweet animated series featuring the adventures of the dysfunctional Griffin family. Bumbling Peter and long-suffering Lois have three kids. Stewie (a brilliant but sadistic baby bent on killing his mother and taking over the world), Meg (the oldest, and is the most unpopular girl in town) and Chris (the middle kid, he's not very bright but has a passion for movies). The final member of the family is Brian - a talking dog and much more than a pet, he keeps Stewie in check whilst sipping Martinis and sorting through his own life issues.",
+                "popularity": 807.845,
+                "poster_path": "https://image.tmdb.org/t/p/original//aLB7psB9N81n5GecHNOudXWW3AI.jpg",
+                "vote_average": 7.3,
+                "vote_count": 3833,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//9TXcHOeCsM8W3ZKKIKjdYUsRSeq.jpg",
+                "first_air_date": "2017-07-17",
+                "genre_ids": [
+                    80,
+                    18
+                ],
+                "id": 72879,
+                "name": "Tomorrow is Ours",
+                "origin_country": [
+                    "FR"
+                ],
+                "original_language": "fr",
+                "original_name": "Demain nous appartient",
+                "overview": "The story revolves around the people of Sète, France. Their lives are punctuated by family rivalries, romance and scenes from daily life, but also by plots involving police investigations, secrets and betrayals.",
+                "popularity": 1879.24,
+                "poster_path": "https://image.tmdb.org/t/p/original//3uU5uJzOX7xe7mn7YKpBM9oiEZO.jpg",
+                "vote_average": 6.8,
+                "vote_count": 29,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//d1ujVe5yWPJ6mtepghxidUYIJa5.jpg",
+                "first_air_date": "2020-10-05",
+                "genre_ids": [
+                    18,
+                    10766,
+                    10751
+                ],
+                "id": 111453,
+                "name": "Ghum Hai Kisikey Pyaar Meiin",
+                "origin_country": [
+                    "IN"
+                ],
+                "original_language": "hi",
+                "original_name": "घुम है किसिकी प्यार में",
+                "overview": "Virat sacrifices his love to honour the promise he made to a dying man. Trapped between the past and the present, will he find love beyond the chains of duty?",
+                "popularity": 1367.859,
+                "poster_path": "https://image.tmdb.org/t/p/original//u3NVGYCpkAgBArXogLuHPfpSNwG.jpg",
+                "vote_average": 5.6,
+                "vote_count": 67,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//hxOIK9a0WNS1ZDqdu4ulwz9MOh.jpg",
+                "first_air_date": "1961-05-01",
+                "genre_ids": [
+                    16
+                ],
+                "id": 210220,
+                "name": "Otogi Manga Calendar",
+                "origin_country": [
+                    "JP"
+                ],
+                "original_language": "ja",
+                "original_name": "おとぎマンガカレンダー",
+                "overview": "The show was about historical events through a character who was not aware of what happened on this day in history. Sometimes photographs and film footages were mixed in with the animations to explain what historical event had taken place. The research archives came from the Mainichi Shinbun newspaper where the director's Fuku-chan manga was printing at the time.",
+                "popularity": 772.97,
+                "poster_path": "https://image.tmdb.org/t/p/original/null",
+                "vote_average": 0,
+                "vote_count": 0,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//yJEFbFax9fb8ePB0rK9UIQoXMG4.jpg",
+                "first_air_date": "2023-04-17",
+                "genre_ids": [
+                    18
+                ],
+                "id": 222100,
+                "name": "Meant To Be",
+                "origin_country": [
+                    "KR"
+                ],
+                "original_language": "ko",
+                "original_name": "Meant To Be",
+                "overview": "The work depicts the lives of two women, Lee Hae In, and Kang Se Na, who fell into different fates as children.",
+                "popularity": 1673.178,
+                "poster_path": "https://image.tmdb.org/t/p/original//xdzSO56WueBMW45QHWemV3D6mzJ.jpg",
+                "vote_average": 7,
+                "vote_count": 92,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//rj3jBAZwPiOgkwAy1205MAgLahj.jpg",
+                "first_air_date": "2018-08-27",
+                "genre_ids": [
+                    10766
+                ],
+                "id": 81329,
+                "name": "Chronicles of the Sun",
+                "origin_country": [
+                    "FR"
+                ],
+                "original_language": "fr",
+                "original_name": "Un si grand soleil",
+                "overview": "",
+                "popularity": 1628.369,
+                "poster_path": "https://image.tmdb.org/t/p/original//t6jVlbPMtZOJoAOfeoR4yQmnjXM.jpg",
+                "vote_average": 7.6,
+                "vote_count": 44,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//doZ35KmTsCCnEb8cy7HKfSAG4MO.jpg",
+                "first_air_date": "2015-01-18",
+                "genre_ids": [
+                    10759,
+                    16,
+                    35,
+                    10765
+                ],
+                "id": 61923,
+                "name": "Star vs. the Forces of Evil",
+                "origin_country": [
+                    "US"
+                ],
+                "original_language": "en",
+                "original_name": "Star vs. the Forces of Evil",
+                "overview": "Intergalactic warrior Star Butterfly arrives on Earth to live with the Diaz family. She continues to battle villains throughout the universe and high school, mainly to protect her extremely powerful wand, an object that still confuses her.",
+                "popularity": 684.839,
+                "poster_path": "https://image.tmdb.org/t/p/original//dKFL1AOdKNoazqZDg1zq2z69Lx1.jpg",
+                "vote_average": 8.4,
+                "vote_count": 1230,
+                "video": [
+                    {
+                        "iso_639_1": "en",
+                        "iso_3166_1": "US",
+                        "name": "Star Vs The Forces of Evil Fan Trailer",
+                        "key": "7qkjUFB-NcA",
+                        "published_at": "2016-12-16T23:19:36.000Z",
+                        "site": "YouTube",
+                        "size": 720,
+                        "type": "Trailer",
+                        "official": false,
+                        "id": "5b757ed79251411dad010863"
+                    }
+                ]
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//o5GsA1G5YEruuUNOYvWjlArIC37.jpg",
+                "first_air_date": "2022-09-19",
+                "genre_ids": [
+                    10766
+                ],
+                "id": 210506,
+                "name": "Sangue Oculto",
+                "origin_country": [
+                    "PT"
+                ],
+                "original_language": "pt",
+                "original_name": "Sangue Oculto",
+                "overview": "",
+                "popularity": 1248.077,
+                "poster_path": "https://image.tmdb.org/t/p/original//myCEG6C5Nk181jXzBek5MQEXpM2.jpg",
+                "vote_average": 6.6,
+                "vote_count": 18,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//sRfl6vyzGWutgG0cmXmbChC4iN6.jpg",
+                "first_air_date": "2005-03-26",
+                "genre_ids": [
+                    10759,
+                    18,
+                    10765
+                ],
+                "id": 57243,
+                "name": "Doctor Who",
+                "origin_country": [
+                    "GB"
+                ],
+                "original_language": "en",
+                "original_name": "Doctor Who",
+                "overview": "The Doctor is a Time Lord: a 900 year old alien with 2 hearts, part of a gifted civilization who mastered time travel. The Doctor saves planets for a living—more of a hobby actually, and the Doctor's very, very good at it.",
+                "popularity": 669.771,
+                "poster_path": "https://image.tmdb.org/t/p/original//sz4zF5z9zyFh8Z6g5IQPNq91cI7.jpg",
+                "vote_average": 7.4,
+                "vote_count": 2609,
+                "video": [
+                    {
+                        "iso_639_1": "en",
+                        "iso_3166_1": "US",
+                        "name": "\"The show is just beginning…\" #DoctorWho returns in 2023 ❤️❤️➕🔷 Teaser Trailer | @DoctorWho - BBC",
+                        "key": "C5eYrUvHnqI",
+                        "site": "YouTube",
+                        "size": 1080,
+                        "type": "Teaser",
+                        "official": true,
+                        "published_at": "2022-12-25T18:26:54.000Z",
+                        "id": "63ac79a51f748b00c8b6d7f4"
+                    },
+                    {
+                        "iso_639_1": "en",
+                        "iso_3166_1": "US",
+                        "name": "Doctor Who: Flux | Official Trailer",
+                        "key": "xDUvFdGu6JE",
+                        "site": "YouTube",
+                        "size": 1080,
+                        "type": "Trailer",
+                        "official": true,
+                        "published_at": "2021-10-15T21:55:10.000Z",
+                        "id": "61e77a9bb513a800bcfe4526"
+                    },
+                    {
+                        "iso_639_1": "en",
+                        "iso_3166_1": "US",
+                        "name": "The Adventure Begins | Series 1-8 Trailer | Doctor Who",
+                        "key": "MLn1IuAyKaI",
+                        "published_at": "2015-05-14T09:14:19.000Z",
+                        "site": "YouTube",
+                        "size": 1080,
+                        "type": "Featurette",
+                        "official": true,
+                        "id": "5a47c114c3a368095200fc61"
+                    }
+                ]
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//mAJ84W6I8I272Da87qplS2Dp9ST.jpg",
+                "first_air_date": "2023-01-23",
+                "genre_ids": [
+                    9648,
+                    18
+                ],
+                "id": 202250,
+                "name": "Dirty Linen",
+                "origin_country": [
+                    "PH"
+                ],
+                "original_language": "tl",
+                "original_name": "Dirty Linen",
+                "overview": "To exact vengeance, a young woman infiltrates the household of an influential family as a housemaid to expose their dirty secrets. However, love will get in the way of her revenge plot.",
+                "popularity": 1550.192,
+                "poster_path": "https://image.tmdb.org/t/p/original//aoAZgnmMzY9vVy9VWnO3U5PZENh.jpg",
+                "vote_average": 6.7,
+                "vote_count": 100,
+                "video": [
+                    {
+                        "iso_639_1": "en",
+                        "iso_3166_1": "US",
+                        "name": "Full Trailer",
+                        "key": "kceO0BuiygI",
+                        "site": "YouTube",
+                        "size": 1080,
+                        "type": "Trailer",
+                        "official": true,
+                        "published_at": "2022-12-15T04:10:11.000Z",
+                        "id": "639ac930a4af8f00d42ce019"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "64e455b867b7d4f8715f2298",
+        "MovData": [
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//oOce9hLMVFubjAJliau4kiSNPnW.jpg",
+                "first_air_date": "1990-09-13",
+                "genre_ids": [
+                    80,
+                    18
+                ],
+                "id": 549,
+                "name": "Law & Order",
+                "origin_country": [
+                    "US"
+                ],
+                "original_language": "en",
+                "original_name": "Law & Order",
+                "overview": "In cases ripped from the headlines, police investigate serious and often deadly crimes, weighing the evidence and questioning the suspects until someone is taken into custody. The district attorney's office then builds a case to convict the perpetrator by proving the person guilty beyond a reasonable doubt. Working together, these expert teams navigate all sides of the complex criminal justice system to make New York a safer place.",
+                "popularity": 6363.712,
+                "poster_path": "https://image.tmdb.org/t/p/original//77OPlbsvX3pzoFbyfpcE3GXMCod.jpg",
+                "vote_average": 7.6,
+                "vote_count": 437,
+                "video": [
+                    {
+                        "iso_639_1": "en",
+                        "iso_3166_1": "US",
+                        "name": "Law and Order Trailer",
+                        "key": "RzN8cPlcMTU",
+                        "site": "YouTube",
+                        "size": 1080,
+                        "type": "Trailer",
+                        "official": false,
+                        "published_at": "2016-06-22T01:57:09.000Z",
+                        "id": "62cac70f90b87e0757220ff5"
+                    }
+                ]
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//9xxLWtnFxkpJ2h1uthpvCRK6vta.jpg",
+                "first_air_date": "1999-09-20",
+                "genre_ids": [
+                    80,
+                    18,
+                    9648
+                ],
+                "id": 2734,
+                "name": "Law & Order: Special Victims Unit",
+                "origin_country": [
+                    "US"
+                ],
+                "original_language": "en",
+                "original_name": "Law & Order: Special Victims Unit",
+                "overview": "In the criminal justice system, sexually-based offenses are considered especially heinous. In New York City, the dedicated detectives who investigate these vicious felonies are members of an elite squad known as the Special Victims Unit. These are their stories.",
+                "popularity": 3653.48,
+                "poster_path": "https://image.tmdb.org/t/p/original//ywBt4WKADdMVgxTR1rS2uFwMYTH.jpg",
+                "vote_average": 8,
+                "vote_count": 3345,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//jWXrQstj7p3Wl5MfYWY6IHqRpDb.jpg",
+                "first_air_date": "1952-12-26",
+                "genre_ids": [
+                    10763
+                ],
+                "id": 94722,
+                "name": "Tagesschau",
+                "origin_country": [
+                    "DE"
+                ],
+                "original_language": "de",
+                "original_name": "Tagesschau",
+                "overview": "German daily news program, the oldest still existing program on German television.",
+                "popularity": 4708.625,
+                "poster_path": "https://image.tmdb.org/t/p/original//7dFZJ2ZJJdcmkp05B9NWlqTJ5tq.jpg",
+                "vote_average": 7.5,
+                "vote_count": 123,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//t2rAdgjSh0WYbXzdOB5zTDqzdCI.jpg",
+                "first_air_date": "2022-11-02",
+                "genre_ids": [
+                    18
+                ],
+                "id": 213713,
+                "name": "Faltu",
+                "origin_country": [
+                    "IN"
+                ],
+                "original_language": "hi",
+                "original_name": "Faltu",
+                "overview": "What's in a name? Amidst the arid landscape of Rajasthan, a young woman with dreamy eyes struggles to prove her worth.",
+                "popularity": 3082.053,
+                "poster_path": "https://image.tmdb.org/t/p/original//lgyFuoXs7GvKJN0mNm7z7OMOFuZ.jpg",
+                "vote_average": 7,
+                "vote_count": 128,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original/null",
+                "first_air_date": "2022-11-28",
+                "genre_ids": [
+                    18
+                ],
+                "id": 215315,
+                "name": "Rabb Se Hai Dua",
+                "origin_country": [
+                    "IN"
+                ],
+                "original_language": "hi",
+                "original_name": "रब्ब से है दुआ",
+                "overview": "Dua and her husband are a perfect married couple in the eyes of their family. However, Dua’s life turns upside down when her husband seeks her permission to marry another woman.",
+                "popularity": 2892.764,
+                "poster_path": "https://image.tmdb.org/t/p/original//6ikbefd7VeopbBuGgioYMNU5bQj.jpg",
+                "vote_average": 6.8,
+                "vote_count": 79,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//3n2TjKw3HrwDqgVgcynvantOfS3.jpg",
+                "first_air_date": "2023-01-04",
+                "genre_ids": [
+                    18,
+                    10751
+                ],
+                "id": 215103,
+                "name": "Teri Meri Doriyaann",
+                "origin_country": [
+                    "IN"
+                ],
+                "original_language": "hi",
+                "original_name": "तेरी मेरी डोरियाँ",
+                "overview": "It’s hate at first sight for Sahiba and Angad! But destined to be together, their lives get intertwined by a marriage alliance, and a love-hate story ensues.",
+                "popularity": 2913.368,
+                "poster_path": "https://image.tmdb.org/t/p/original//4BHDmYiuSnNL3nqKIOzLJKYX4AN.jpg",
+                "vote_average": 7.2,
+                "vote_count": 104,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//e9n87p3Ax67spq3eUgLB6rjIEow.jpg",
+                "first_air_date": "2005-09-13",
+                "genre_ids": [
+                    80,
+                    18
+                ],
+                "id": 1911,
+                "name": "Bones",
+                "origin_country": [
+                    "US"
+                ],
+                "original_language": "en",
+                "original_name": "Bones",
+                "overview": "Dr. Temperance Brennan and her colleagues at the Jeffersonian's Medico-Legal Lab assist Special Agent Seeley Booth with murder investigations when the remains are so badly decomposed, burned or destroyed that the standard identification methods are useless.",
+                "popularity": 1643.135,
+                "poster_path": "https://image.tmdb.org/t/p/original//eyTu5c8LniVciRZIOSHTvvkkgJa.jpg",
+                "vote_average": 8.3,
+                "vote_count": 2855,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//x4lxFIhhrDI4nWtV8osnYwbGESV.jpg",
+                "first_air_date": "2009-09-23",
+                "genre_ids": [
+                    35
+                ],
+                "id": 1421,
+                "name": "Modern Family",
+                "origin_country": [
+                    "US"
+                ],
+                "original_language": "en",
+                "original_name": "Modern Family",
+                "overview": "The Pritchett-Dunphy-Tucker clan is a wonderfully large and blended family. They give us an honest and often hilarious look into the sometimes warm, sometimes twisted, embrace of the modern family.",
+                "popularity": 1552.515,
+                "poster_path": "https://image.tmdb.org/t/p/original//fCiOen2bpru5JhzlaNkaNWNd9eP.jpg",
+                "vote_average": 7.8,
+                "vote_count": 2295,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//jtAh65bX9Ydy2NFkwTN6V9WSzWb.jpg",
+                "first_air_date": "2023-02-07",
+                "genre_ids": [
+                    18
+                ],
+                "id": 220525,
+                "name": "Maitree",
+                "origin_country": [],
+                "original_language": "hi",
+                "original_name": "मैत्री",
+                "overview": "",
+                "popularity": 2440.766,
+                "poster_path": "https://image.tmdb.org/t/p/original//k57vsZ5Pl80WRR02ahgC3QLdhhL.jpg",
+                "vote_average": 7.7,
+                "vote_count": 34,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//m0TiLZ79RR19Zz0AZruQSBeH39x.jpg",
+                "first_air_date": "2019-07-09",
+                "genre_ids": [
+                    10764
+                ],
+                "id": 90521,
+                "name": "Love Island",
+                "origin_country": [
+                    "US"
+                ],
+                "original_language": "en",
+                "original_name": "Love Island",
+                "overview": "American version of the British dating reality competition in which ten singles come to stay in a villa for a few weeks and have to couple up with one another. Over the course of those weeks, they face the public vote and might be eliminated from the show. Other islanders join and try to break up the couples.",
+                "popularity": 2271.646,
+                "poster_path": "https://image.tmdb.org/t/p/original//kU2y21cls8WargMaX7KI47URMjD.jpg",
+                "vote_average": 7.4,
+                "vote_count": 116,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//aplztf8fotkLOnwBM0bNfNmlxSo.jpg",
+                "first_air_date": "1977-09-24",
+                "genre_ids": [
+                    18,
+                    35
+                ],
+                "id": 1823,
+                "name": "The Love Boat",
+                "origin_country": [
+                    "US"
+                ],
+                "original_language": "en",
+                "original_name": "The Love Boat",
+                "overview": "Passengers who search for romantic nights aboard a beautiful ship travelling to tropical or mysterious countries, decide to pass their vacation aboard the \"Love Boat\", where Gopher, Dr. Bricker, Isaac, Julie, and Captain Stubing try their best to please them, and sometimes help them fall in love. Things are not always so easy, but in the end, love wins.",
+                "popularity": 1327.26,
+                "poster_path": "https://image.tmdb.org/t/p/original//fnsnazlj2bt3Fuj0pJ7wBPmuMLO.jpg",
+                "vote_average": 6.3,
+                "vote_count": 147,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//yYNa1nqvNK94xZz3eKyfvZdAvPi.jpg",
+                "first_air_date": "2020-11-02",
+                "genre_ids": [
+                    10766
+                ],
+                "id": 112470,
+                "name": "Here it all begins",
+                "origin_country": [
+                    "FR"
+                ],
+                "original_language": "fr",
+                "original_name": "Ici tout commence",
+                "overview": "",
+                "popularity": 2137.402,
+                "poster_path": "https://image.tmdb.org/t/p/original//60cqjI590JKXCAABqCStVmSBGET.jpg",
+                "vote_average": 6.7,
+                "vote_count": 23,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//7xIQL3eyNmQjZTJjzlsmzRUjAEx.jpg",
+                "first_air_date": "2005-02-06",
+                "genre_ids": [
+                    16,
+                    35
+                ],
+                "id": 1433,
+                "name": "American Dad!",
+                "origin_country": [
+                    "US"
+                ],
+                "original_language": "en",
+                "original_name": "American Dad!",
+                "overview": "The series focuses on an eccentric motley crew that is the Smith family and their three housemates: Father, husband, and breadwinner Stan Smith; his better half housewife, Francine Smith; their college-aged daughter, Hayley Smith; and their high-school-aged son, Steve Smith. Outside of the Smith family, there are three additional main characters, including Hayley's boyfriend turned husband, Jeff Fischer; the family's man-in-a-goldfish-body pet, Klaus; and most notably the family's zany alien, Roger, who is \"full of masquerades, brazenness, and shocking antics.\"",
+                "popularity": 1444.239,
+                "poster_path": "https://image.tmdb.org/t/p/original//xnFFz3etm1vftF0ns8RMHA8XdqT.jpg",
+                "vote_average": 6.9,
+                "vote_count": 1834,
+                "video": [
+                    {
+                        "iso_639_1": "en",
+                        "iso_3166_1": "US",
+                        "name": "American Dad: Theatrical Trailer | TBS",
+                        "key": "apr31MFjg08",
+                        "published_at": "2014-10-05T14:54:26.000Z",
+                        "site": "YouTube",
+                        "size": 720,
+                        "type": "Trailer",
+                        "official": true,
+                        "id": "5746051ec3a3682d5200026a"
+                    }
+                ]
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original/null",
+                "first_air_date": "2022-12-19",
+                "genre_ids": [],
+                "id": 227017,
+                "name": "YHC: 2nd Generation",
+                "origin_country": [
+                    "US"
+                ],
+                "original_language": "en",
+                "original_name": "YHC: 2nd Generation",
+                "overview": "When destiny brings a reserved physiotherapist, Dr Nayantara and a famous rockstar Samrat together, will love blossom between them?",
+                "popularity": 2103.12,
+                "poster_path": "https://image.tmdb.org/t/p/original/null",
+                "vote_average": 5.7,
+                "vote_count": 3,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//kdF7ZTktLHVVhAhI90uuzqlZqJI.jpg",
+                "first_air_date": "2023-06-06",
+                "genre_ids": [
+                    18
+                ],
+                "id": 228093,
+                "name": "Titlie",
+                "origin_country": [
+                    "IN"
+                ],
+                "original_language": "hi",
+                "original_name": "Titlie",
+                "overview": "Obsessed by the notion of fairy tale love , Titlie marries her beau Garv . Soon , the picture - perfect romance turns abusive , forcing her to wrestle with reality .",
+                "popularity": 2027.49,
+                "poster_path": "https://image.tmdb.org/t/p/original//5kZi1LCFugNAeDCWOF3ornGNm2W.jpg",
+                "vote_average": 7.8,
+                "vote_count": 80,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//5e1MxLWTJh6n4qtYz0vlevOK6qW.jpg",
+                "first_air_date": "2023-07-03",
+                "genre_ids": [
+                    18
+                ],
+                "id": 229932,
+                "name": "Pyaar Ka Pehla Adhyaya  - Shiv Shakti",
+                "origin_country": [
+                    "IN"
+                ],
+                "original_language": "hi",
+                "original_name": "Pyaar Ka Pehla Adhyaya  - Shiv Shakti",
+                "overview": "Shiv has a rewarding career as a doctor, but his personal life is in tatters. Shakti, an orphan, is a nurturer by nature. Will Shakti heal a broken Shiv?",
+                "popularity": 1936.915,
+                "poster_path": "https://image.tmdb.org/t/p/original//jHK9bCDefHq43cHvMVUM7SLumYF.jpg",
+                "vote_average": 8.2,
+                "vote_count": 47,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//wq269s8vzr8xrwrIALtl4UfmN6X.jpg",
+                "first_air_date": "2023-06-12",
+                "genre_ids": [],
+                "id": 228627,
+                "name": "Do Dil Mil Rahe Hai",
+                "origin_country": [
+                    "IN"
+                ],
+                "original_language": "hi",
+                "original_name": "Do Dil Mil Rahe Hai",
+                "overview": "He repels love , she resembles it ! Rishi and Pihu are worlds apart but unaware of the past that connects them . Will fate lead the duo down the road to true love ?",
+                "popularity": 1976.569,
+                "poster_path": "https://image.tmdb.org/t/p/original//juYg1PQzCmDJYyGtrW0Xbvke1jx.jpg",
+                "vote_average": 7.3,
+                "vote_count": 61,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//wJmcuxa0C4AERmA9mejxm9qRYDj.jpg",
+                "first_air_date": "2022-06-06",
+                "genre_ids": [
+                    80,
+                    9648
+                ],
+                "id": 203504,
+                "name": "Aashiqana",
+                "origin_country": [
+                    "IN"
+                ],
+                "original_language": "hi",
+                "original_name": "आशिकाना",
+                "overview": "A serial killer sparks the story of uptight Yashvardhan and feisty Chikki. Plagued by misunderstandings, how far do they have to go to nab the murderer?",
+                "popularity": 2141.644,
+                "poster_path": "https://image.tmdb.org/t/p/original//a4Z6Uohb6Ln5vcPvMUzwyn3WBjP.jpg",
+                "vote_average": 6.6,
+                "vote_count": 32,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//ottT2Yt0OfHiHp3PHJTLNVV8JPE.jpg",
+                "first_air_date": "1992-05-11",
+                "genre_ids": [
+                    18,
+                    10766
+                ],
+                "id": 13945,
+                "name": "Gute Zeiten, schlechte Zeiten",
+                "origin_country": [
+                    "DE"
+                ],
+                "original_language": "de",
+                "original_name": "Gute Zeiten, schlechte Zeiten",
+                "overview": "Gute Zeiten, schlechte Zeiten is a long-running German television soap opera, first broadcast on RTL in 1992. The programme concerns the lives of a fictional neighborhood in Germany's capital city Berlin. Over the years the soap opera tends to have an overhaul of young people in their late teens and early twenties; targeting a young viewership.",
+                "popularity": 2597.73,
+                "poster_path": "https://image.tmdb.org/t/p/original//fNHBzjxsydcAssxXqb5IV2obDdU.jpg",
+                "vote_average": 6.8,
+                "vote_count": 15,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//a1axm2xRYGB35X406AMI51IrhYp.jpg",
+                "first_air_date": "2012-10-10",
+                "genre_ids": [
+                    18
+                ],
+                "id": 44006,
+                "name": "Chicago Fire",
+                "origin_country": [
+                    "US"
+                ],
+                "original_language": "en",
+                "original_name": "Chicago Fire",
+                "overview": "An edge-of-your-seat view into the lives of everyday heroes committed to one of America's noblest professions. For the firefighters, rescue squad and paramedics of Chicago Firehouse 51, no occupation is more stressful or dangerous, yet so rewarding and exhilarating. These courageous men and women are among the elite who forge headfirst into danger when everyone else is running the other way and whose actions make the difference between life and death.",
+                "popularity": 1085.041,
+                "poster_path": "https://image.tmdb.org/t/p/original//iiI1YU8akLYWdWuX1qHuMYPvSHC.jpg",
+                "vote_average": 8.4,
+                "vote_count": 1988,
+                "video": [
+                    {
+                        "iso_639_1": "en",
+                        "iso_3166_1": "US",
+                        "name": "Chicago Fire: Season One | Trailer | Coming to DVD Sept 2013",
+                        "key": "IIeSDILTE5M",
+                        "published_at": "2013-08-22T18:45:35.000Z",
+                        "site": "YouTube",
+                        "size": 1080,
+                        "type": "Trailer",
+                        "official": true,
+                        "id": "556057eac3a36868e5005702"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "64e455bb67b7d4f8715f2299",
+        "MovData": [
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//5YfFibGB0Mjcl2RHUqztlPBCJp8.jpg",
+                "first_air_date": "2023-06-12",
+                "genre_ids": [
+                    18,
+                    10766
+                ],
+                "id": 226411,
+                "name": "Mía es la venganza",
+                "origin_country": [
+                    "ES"
+                ],
+                "original_language": "es",
+                "original_name": "Mía es la venganza",
+                "overview": "",
+                "popularity": 1506.8,
+                "poster_path": "https://image.tmdb.org/t/p/original//bReUZMOPDSs4fpONIIQER6X4yNm.jpg",
+                "vote_average": 7.4,
+                "vote_count": 52,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//xl1wGwaPZInJo1JAnpKqnFozWBE.jpg",
+                "first_air_date": "2014-02-17",
+                "genre_ids": [
+                    35,
+                    10767
+                ],
+                "id": 59941,
+                "name": "The Tonight Show Starring Jimmy Fallon",
+                "origin_country": [
+                    "US"
+                ],
+                "original_language": "en",
+                "original_name": "The Tonight Show Starring Jimmy Fallon",
+                "overview": "After Jay Leno's second retirement from the program, Jimmy Fallon stepped in as his permanent replacement. After 42 years in Los Angeles the program was brought back to New York.",
+                "popularity": 1409.649,
+                "poster_path": "https://image.tmdb.org/t/p/original//2ItOtzcGlBT39b3xYkmYi82pp9r.jpg",
+                "vote_average": 6,
+                "vote_count": 226,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//hpU2cHC9tk90hswCFEpf5AtbqoL.jpg",
+                "first_air_date": "1989-12-17",
+                "genre_ids": [
+                    10751,
+                    16,
+                    35
+                ],
+                "id": 456,
+                "name": "The Simpsons",
+                "origin_country": [
+                    "US"
+                ],
+                "original_language": "en",
+                "original_name": "The Simpsons",
+                "overview": "Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands. Since the beginning, the series has been a pop culture icon, attracting hundreds of celebrities to guest star. The show has also made name for itself in its fearless satirical take on politics, media and American life in general.",
+                "popularity": 813.678,
+                "poster_path": "https://image.tmdb.org/t/p/original//zI3E2a3WYma5w8emI35mgq5Iurx.jpg",
+                "vote_average": 8,
+                "vote_count": 9057,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//2eIlCirgcvEwmCSYh2wDfz5Sxvz.jpg",
+                "first_air_date": "2013-09-23",
+                "genre_ids": [
+                    18,
+                    80,
+                    9648
+                ],
+                "id": 46952,
+                "name": "The Blacklist",
+                "origin_country": [
+                    "US"
+                ],
+                "original_language": "en",
+                "original_name": "The Blacklist",
+                "overview": "Raymond \"Red\" Reddington, one of the FBI's most wanted fugitives, surrenders in person at FBI Headquarters in Washington, D.C. He claims that he and the FBI have the same interests: bringing down dangerous criminals and terrorists. In the last two decades, he's made a list of criminals and terrorists that matter the most but the FBI cannot find because it does not know they exist. Reddington calls this \"The Blacklist\". Reddington will co-operate, but insists that he will speak only to Elizabeth Keen, a rookie FBI profiler.",
+                "popularity": 764.958,
+                "poster_path": "https://image.tmdb.org/t/p/original//r935SMphvXppx5bJjbIBNx02fwc.jpg",
+                "vote_average": 7.6,
+                "vote_count": 2787,
+                "video": [
+                    {
+                        "iso_639_1": "en",
+                        "iso_3166_1": "US",
+                        "name": "Trailer",
+                        "key": "-WYdUaK54fU",
+                        "site": "YouTube",
+                        "size": 1080,
+                        "type": "Trailer",
+                        "official": false,
+                        "published_at": "2014-08-26T05:36:53.000Z",
+                        "id": "619ba183c0ae360044f8ddc8"
+                    }
+                ]
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//or0E36KfzJYZwqXeiCfm1JgepKF.jpg",
+                "first_air_date": "2011-06-23",
+                "genre_ids": [
+                    18
+                ],
+                "id": 37680,
+                "name": "Suits",
+                "origin_country": [
+                    "US"
+                ],
+                "original_language": "en",
+                "original_name": "Suits",
+                "overview": "While running from a drug deal gone bad, Mike Ross, a brilliant young college-dropout, slips into a job interview with one of New York City's best legal closers, Harvey Specter. Tired of cookie-cutter law school grads, Harvey takes a gamble by hiring Mike on the spot after he recognizes his raw talent and photographic memory.",
+                "popularity": 891.885,
+                "poster_path": "https://image.tmdb.org/t/p/original//vQiryp6LioFxQThywxbC6TuoDjy.jpg",
+                "vote_average": 8.2,
+                "vote_count": 4403,
+                "video": [
+                    {
+                        "iso_639_1": "en",
+                        "iso_3166_1": "US",
+                        "name": "Suits - (Season 1 Trailer)",
+                        "key": "cUnkjEIW2-o",
+                        "site": "YouTube",
+                        "size": 1080,
+                        "type": "Trailer",
+                        "official": false,
+                        "published_at": "2019-03-30T18:06:04.000Z",
+                        "id": "64c3fe7d66a0d3013b3ca42d"
+                    },
+                    {
+                        "iso_639_1": "en",
+                        "iso_3166_1": "US",
+                        "name": "Suits: Season 1 Trailer",
+                        "key": "85z53bAebsI",
+                        "published_at": "2012-05-02T02:41:56.000Z",
+                        "site": "YouTube",
+                        "size": 360,
+                        "type": "Trailer",
+                        "official": false,
+                        "id": "5b6766070e0a267ee50ab29f"
+                    }
+                ]
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//a5Ymb8KqwiWcwEFcyAJtwcuMVK1.jpg",
+                "first_air_date": "2016-03-02",
+                "genre_ids": [
+                    99
+                ],
+                "id": 65772,
+                "name": "Gaycation",
+                "origin_country": [
+                    "US"
+                ],
+                "original_language": "en",
+                "original_name": "Gaycation",
+                "overview": "Elliot and his best friend Ian set off on a personal journey to explore LGBTQ cultures around the world. From Japan to Brazil, Jamaica to America, they discover the multiplicity of LGBTQ experiences, meeting amazing people and hearing their deeply moving stories of struggle and triumph. Gaycation celebrates the state of LGBTQ identities across the globe.",
+                "popularity": 952.13,
+                "poster_path": "https://image.tmdb.org/t/p/original//wIHbQ6BHSX1o4a47J2cR1qqUXt9.jpg",
+                "vote_average": 6,
+                "vote_count": 21,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//uwazmTlEGwuGuKK1OM1Tc1onXPn.jpg",
+                "first_air_date": "2023-06-12",
+                "genre_ids": [],
+                "id": 228459,
+                "name": "Tierra de Esperanza",
+                "origin_country": [
+                    "MX"
+                ],
+                "original_language": "es",
+                "original_name": "Tierra de Esperanza",
+                "overview": "",
+                "popularity": 1449.567,
+                "poster_path": "https://image.tmdb.org/t/p/original//bUfbmaeHoWeqXC6rL8bSFwPfoNJ.jpg",
+                "vote_average": 7.6,
+                "vote_count": 78,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original/null",
+                "first_air_date": "2005-09-05",
+                "genre_ids": [
+                    18,
+                    35
+                ],
+                "id": 36361,
+                "name": "Ulice",
+                "origin_country": [
+                    "CZ"
+                ],
+                "original_language": "cs",
+                "original_name": "Ulice",
+                "overview": "Ulice is a Czech soap opera produced and broadcast by Nova. In the Czech language Ulice means street.\n\nThe show describes the lives of the Farský, Jordán, Boháč, Nikl, and Liška families and many other people that live in Prague. Their daily battle against real problems of living in a modern world like divorce, love, betrayal and illness or disease. Ulice often shows crime.",
+                "popularity": 965.408,
+                "poster_path": "https://image.tmdb.org/t/p/original//3ayWL13P1HeRnyVL9lU9flOdZjq.jpg",
+                "vote_average": 2.5,
+                "vote_count": 15,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//sa9vB0xb3OMU6iSMkig8RBbdESq.jpg",
+                "first_air_date": "2023-07-23",
+                "genre_ids": [
+                    18
+                ],
+                "id": 113962,
+                "name": "Special Ops: Lioness",
+                "origin_country": [
+                    "US"
+                ],
+                "original_language": "en",
+                "original_name": "Special Ops: Lioness",
+                "overview": "Cruz Manuelos, a rough-around-the-edges but passionate young Marine, is recruited to join the CIA’s Lioness Engagement Team to help bring down a terrorist organization from within. Joe, the station chief of the Lioness program, is tasked with training, managing and leading her female undercover operatives.",
+                "popularity": 1020.021,
+                "poster_path": "https://image.tmdb.org/t/p/original//rXCzevakJoAN1qnZY0nAQPSLVRv.jpg",
+                "vote_average": 8.3,
+                "vote_count": 192,
+                "video": [
+                    {
+                        "iso_639_1": "en",
+                        "iso_3166_1": "US",
+                        "name": "Official Trailer",
+                        "key": "Y11p6YzdKHw",
+                        "site": "YouTube",
+                        "size": 1080,
+                        "type": "Trailer",
+                        "official": true,
+                        "published_at": "2023-07-10T14:39:05.000Z",
+                        "id": "64ac346e66a0d300e374e0ce"
+                    },
+                    {
+                        "iso_639_1": "en",
+                        "iso_3166_1": "US",
+                        "name": "Official UK Trailer",
+                        "key": "uEjcXhW7CXo",
+                        "site": "YouTube",
+                        "size": 1080,
+                        "type": "Trailer",
+                        "official": true,
+                        "published_at": "2023-07-10T14:26:05.000Z",
+                        "id": "64b1f86d0e4fc800ad5d39a9"
+                    }
+                ]
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//9xyvcN6sA4XvZswc0droVTKSGay.jpg",
+                "first_air_date": "1958-09-06",
+                "genre_ids": [
+                    37,
+                    10759
+                ],
+                "id": 13837,
+                "name": "Wanted: Dead or Alive",
+                "origin_country": [
+                    "US"
+                ],
+                "original_language": "en",
+                "original_name": "Wanted: Dead or Alive",
+                "overview": "Wanted: Dead or Alive is an American Western television series starring Steve McQueen as the bounty hunter Josh Randall. It aired on CBS for three seasons from 1958–61. The black-and-white program was a spin-off of a March 1958 episode of Trackdown, a 1957–59 western series starring Robert Culp. Both series were produced by Four Star Television in association with CBS Television.\n\nThe series launched McQueen into becoming the first television star to cross over into comparable status on the big screen.",
+                "popularity": 609.246,
+                "poster_path": "https://image.tmdb.org/t/p/original//mYgwFT8JXW6J5YTs8DuzDDOKXlS.jpg",
+                "vote_average": 6.9,
+                "vote_count": 28,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//fEP2Sha3PXJnAcoGOjr5oybq44Q.jpg",
+                "first_air_date": "2023-05-08",
+                "genre_ids": [
+                    10765,
+                    10759
+                ],
+                "id": 134224,
+                "name": "Voltes V: Legacy",
+                "origin_country": [
+                    "PH"
+                ],
+                "original_language": "tl",
+                "original_name": "Voltes V: Legacy",
+                "overview": "Voltes V: Legacy follows the story of three brothers, Steve, Big Bert, and Little Jon Armstrong, and their friends Jamie Robinson and Mark Gordon, as they fight the forces of humanoid aliens known as Boazanians who plans to invade the earth and launch their beast fighters all over the world.",
+                "popularity": 1409.856,
+                "poster_path": "https://image.tmdb.org/t/p/original//jZ32tdCTFsRoU2GehW6ZzSpTyS1.jpg",
+                "vote_average": 7.2,
+                "vote_count": 33,
+                "video": [
+                    {
+                        "iso_639_1": "en",
+                        "iso_3166_1": "US",
+                        "name": "Voltes V: Legacy Mega Trailer 2023 with English subtitles",
+                        "key": "36kM1qZVIHA",
+                        "site": "YouTube",
+                        "size": 1080,
+                        "type": "Trailer",
+                        "official": false,
+                        "published_at": "2023-01-26T07:00:02.000Z",
+                        "id": "6448d8342fdec602fca0e451"
+                    }
+                ]
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//pHpeJbqbYE9rPCxK64o1tKopsDZ.jpg",
+                "first_air_date": "2015-02-02",
+                "genre_ids": [
+                    10766
+                ],
+                "id": 99887,
+                "name": "The Great Emperor Ashoka",
+                "origin_country": [
+                    "IN"
+                ],
+                "original_language": "hi",
+                "original_name": "Chakravartin Ashoka Samrat",
+                "overview": "The story of Ashoka, emperor of the Maurya Empire, from his early struggles to his reign as a ruthless emperor.",
+                "popularity": 588.221,
+                "poster_path": "https://image.tmdb.org/t/p/original//znkKMWvlIzeJwHSe36BHTwtownc.jpg",
+                "vote_average": 0,
+                "vote_count": 0,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//2pOmuq4nkWZzwZbOfZq7CyyQAsM.jpg",
+                "first_air_date": "2003-09-22",
+                "genre_ids": [
+                    35,
+                    18
+                ],
+                "id": 2691,
+                "name": "Two and a Half Men",
+                "origin_country": [
+                    "US"
+                ],
+                "original_language": "en",
+                "original_name": "Two and a Half Men",
+                "overview": "A hedonistic jingle writer's free-wheeling life comes to an abrupt halt when his brother and 10-year-old nephew move into his beach-front house.",
+                "popularity": 670.598,
+                "poster_path": "https://image.tmdb.org/t/p/original//A9QDK4OWpv41W27kCv0LXe30k9S.jpg",
+                "vote_average": 7.5,
+                "vote_count": 2800,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//qtfMr08KQsWXnCHY0a96N8NpQ2l.jpg",
+                "first_air_date": "2004-10-05",
+                "genre_ids": [
+                    10759,
+                    16,
+                    10765
+                ],
+                "id": 30984,
+                "name": "Bleach",
+                "origin_country": [
+                    "JP"
+                ],
+                "original_language": "ja",
+                "original_name": "BLEACH",
+                "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
+                "popularity": 565.213,
+                "poster_path": "https://image.tmdb.org/t/p/original//2EewmxXe72ogD0EaWM8gqa0ccIw.jpg",
+                "vote_average": 8.4,
+                "vote_count": 1573,
+                "video": [
+                    {
+                        "iso_639_1": "en",
+                        "iso_3166_1": "US",
+                        "name": "BLEACH Set 1 Blu-ray - Official Anime Trailer - VIZ Media",
+                        "key": "0c4IoCA5fY0",
+                        "site": "YouTube",
+                        "size": 1080,
+                        "type": "Trailer",
+                        "official": true,
+                        "published_at": "2016-07-13T20:24:33.000Z",
+                        "id": "5fe19e046ee3d7003fea14a9"
+                    }
+                ]
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//63XwyHYjIHIm4F8Vg6wyBfDQprc.jpg",
+                "first_air_date": "2000-10-06",
+                "genre_ids": [
+                    80,
+                    18,
+                    9648
+                ],
+                "id": 1431,
+                "name": "CSI: Crime Scene Investigation",
+                "origin_country": [
+                    "US"
+                ],
+                "original_language": "en",
+                "original_name": "CSI: Crime Scene Investigation",
+                "overview": "A Las Vegas team of forensic investigators are trained to solve criminal cases by scouring the crime scene, collecting irrefutable evidence and finding the missing pieces that solve the mystery.",
+                "popularity": 716.889,
+                "poster_path": "https://image.tmdb.org/t/p/original//i5hmoRjHNWady4AtAGICTUXknKH.jpg",
+                "vote_average": 7.7,
+                "vote_count": 1032,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//1Xm0WqoT0DjZm5JdG2V6YFabrOz.jpg",
+                "first_air_date": "2023-02-13",
+                "genre_ids": [
+                    10759,
+                    35,
+                    18
+                ],
+                "id": 215803,
+                "name": "Batang Quiapo",
+                "origin_country": [
+                    "PH"
+                ],
+                "original_language": "tl",
+                "original_name": "Quiapo Kid",
+                "overview": "A young man rises to be one of the biggest outlaws in the neighborhood while he navigates his way in life to survive in Quiapo. Hoping to earn the affection of his parents, his feat draws him closer to the truth about his identity.",
+                "popularity": 1307.557,
+                "poster_path": "https://image.tmdb.org/t/p/original//9McqS8mgMf5NJCAKZIY6J1oOl8y.jpg",
+                "vote_average": 7.3,
+                "vote_count": 86,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//oOl2v17GpwEpALP8KMyImErJcH6.jpg",
+                "first_air_date": "2016-04-23",
+                "genre_ids": [
+                    35,
+                    10767
+                ],
+                "id": 66465,
+                "name": "The Kapil Sharma Show",
+                "origin_country": [
+                    "IN"
+                ],
+                "original_language": "hi",
+                "original_name": "The Kapil Sharma Show",
+                "overview": "",
+                "popularity": 539.99,
+                "poster_path": "https://image.tmdb.org/t/p/original//fBPNBNFmcwhYXUpkW2Kb6jbeJOR.jpg",
+                "vote_average": 7.5,
+                "vote_count": 30,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//ueZFcwAUvkjyAB9beaiqJyg0M8H.jpg",
+                "first_air_date": "1998-10-07",
+                "genre_ids": [
+                    35,
+                    18,
+                    9648,
+                    10765
+                ],
+                "id": 1981,
+                "name": "Charmed",
+                "origin_country": [
+                    "US"
+                ],
+                "original_language": "en",
+                "original_name": "Charmed",
+                "overview": "Three sisters (Prue, Piper and Phoebe) reunite and unlock their powers to become the Charmed Ones, the most powerful good witches of all time, whose prophesied destiny is to protect innocent lives from evil beings such as demons and warlocks. Each sister possesses unique magical powers that grow and evolve, while they attempt to maintain normal lives in modern day San Francisco. ",
+                "popularity": 808.476,
+                "poster_path": "https://image.tmdb.org/t/p/original//z4bPJ1BWU2EtV69NII2GVvsugQ2.jpg",
+                "vote_average": 8.2,
+                "vote_count": 2032,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//8693rGsfkROQjiwlJD8O2WQV1Et.jpg",
+                "first_air_date": "1984-01-22",
+                "genre_ids": [
+                    10759,
+                    10765
+                ],
+                "id": 2119,
+                "name": "Airwolf",
+                "origin_country": [
+                    "US"
+                ],
+                "original_language": "en",
+                "original_name": "Airwolf",
+                "overview": "Airwolf is an American television series that ran from 1984 until 1987. The program centers on a high-tech military helicopter, code named Airwolf, and its crew as they undertake various missions, many involving espionage, with a Cold War theme.\n\nThe show was created by Donald P. Bellisario. The first three seasons star Jan-Michael Vincent, Ernest Borgnine, Alex Cord, and Jean Bruce Scott. After the original series was cancelled, a fourth season, with an entirely new cast and on a much smaller budget, was filmed in Canada for the USA Network.",
+                "popularity": 522.613,
+                "poster_path": "https://image.tmdb.org/t/p/original//4PAN7zPqmR9b73een97WkxqCTQN.jpg",
+                "vote_average": 7.5,
+                "vote_count": 373,
+                "video": []
+            },
+            {
+                "backdrop_path": "https://image.tmdb.org/t/p/original//5APjn4LnV5wWk5DXq7ZewT6zzP1.jpg",
+                "first_air_date": "1960-12-09",
+                "genre_ids": [
+                    10766
+                ],
+                "id": 291,
+                "name": "Coronation Street",
+                "origin_country": [
+                    "GB"
+                ],
+                "original_language": "en",
+                "original_name": "Coronation Street",
+                "overview": "The residents of Coronation Street are ordinary, working-class people, and the show follows them through regular social and family interactions at home, in the workplace, and in their local pub, the Rovers Return Inn. Britain's longest-running soap.",
+                "popularity": 689.505,
+                "poster_path": "https://image.tmdb.org/t/p/original//xe6y8SJU0NyGEECu2LV9cXoY81g.jpg",
+                "vote_average": 5.2,
+                "vote_count": 86,
+                "video": []
+            }
+        ]
+    }
+]
+const movies = data.map(e => e.MovData);
+const finalarr = movies.flat();
+
+//  const POSTDATA = {
+//     MovieData : res2
+// }
+
+// finalarr.forEach(e => {
+//     console.log(e);
+//     const postdata = {
+//             method: 'POST',
+//             headers: {
+//                 accept: 'application/json',
+//                 'Content-Type': 'application/json',
+//                 'Authorization' : "Bearer U2FsdGVkX1+yhQU9tZMjJTlbLc8Fcqap/e7AkgsP0U062HZdGW655JR6O5Ql57OsyR23WSLQUzFGlqBZM6gyBJjouPaKUhMVGV6FLPsry1ZNUdtjIcs4RChpMOSO7qoh",
+//             },
+//             body:JSON.stringify(e)
+//         };
+    
+//         fetch('http://localhost:4000/tvshows/add', postdata)
+//             .then(response => response.json())
+//             .then(response => console.log(response))
+//             .catch(err => console.error(err));
+// })
+
+        // })
+
+
+        
+        // .catch(err => console.error(err));
+
+
+
+
+
+//     const tvshowss = {
+//         method: 'GET',
+//         headers: {
+//             accept: 'application/json',
+//             Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2M2U4ZTdhZmMwOTRhYjJiYTk0OTc0ZjllYzM5YzEyOCIsInN1YiI6IjY0ZDliYWM1ZDEwMGI2MDBmZjBiZjY1MyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.bJKmFGBYVvK2VJUDdHrfRzcR-pyMXUS6qxHxdGpB294'
+//         }
+//     };
+
+//     // fetch('https://api.themoviedb.org/3/discover/tv?include_adult=false&include_null_first_air_dates=false&language=en-US&page=3&sort_by=popularity.desc', options)
+//         .then(tvshows => tvshows.json())
+//         .then(async tvshows => {
+//             // console.log(tvshows)
+
+//             finaltvshows = tvshows.results.map(async e => {
+//                 const res = await fetch(`https://api.themoviedb.org/3/tv/${e.id}/videos?language=en-US`, {
+//                     method: 'GET',
+//                     headers: {
+//                         accept: 'application/json',
+//                         Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2M2U4ZTdhZmMwOTRhYjJiYTk0OTc0ZjllYzM5YzEyOCIsInN1YiI6IjY0ZDliYWM1ZDEwMGI2MDBmZjBiZjY1MyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.bJKmFGBYVvK2VJUDdHrfRzcR-pyMXUS6qxHxdGpB294'
+//                     }
+//                 })
+//                 return res.json();
+//             });
+
+
+//             let res1 = await Promise.allSettled(finaltvshows);
+//             res1 = res1.map(e => ([
+//                 ...e.value.results.filter(e => e.site == "YouTube" && e.name.includes("Trailer")),
+//             ]))
+//             const res2 = tvshows.results.map((e, index) => ({
+//                 ...e,
+//                 backdrop_path: "https://image.tmdb.org/t/p/original/" + e.backdrop_path,
+//                 poster_path: "https://image.tmdb.org/t/p/original/" + e.poster_path,
+//                 video: res1[index]
+// }))
+// console.log(res2);
+
+// const POSTDATA = {
+//     MovData : res2
+// }
+// const postdata = {
+//         method: 'POST',
+//         headers: {
+//             accept: 'application/json',
+//             'Content-Type': 'application/json',
+//             'Authorization' : "Bearer U2FsdGVkX1+yhQU9tZMjJTlbLc8Fcqap/e7AkgsP0U062HZdGW655JR6O5Ql57OsyR23WSLQUzFGlqBZM6gyBJjouPaKUhMVGV6FLPsry1ZNUdtjIcs4RChpMOSO7qoh",
+//         },
+//         body:JSON.stringify(POSTDATA)
+//     };
+
+//     fetch('http://localhost:4000/tvshows/add', postdata)
+//         .then(response => response.json())
+//         .then(response => console.log(response))
+//         .catch(err => console.error(err));
+
+//         })
+//         .catch(err => console.error(err));
+
+//         console.log(response)
+
+
+
+    
+
+</script>
+
+</html>
